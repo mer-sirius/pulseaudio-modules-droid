@@ -100,10 +100,8 @@ uint32_t conversion_table_default_audio_source[][2] = {
     { AUDIO_DEVICE_IN_VOICE_CALL,                   AUDIO_SOURCE_VOICE_CALL },
     { AUDIO_DEVICE_IN_BACK_MIC,                     AUDIO_SOURCE_MIC },
     { AUDIO_DEVICE_IN_REMOTE_SUBMIX,                AUDIO_SOURCE_REMOTE_SUBMIX },
-#ifdef QCOM_HARDWARE
     { AUDIO_DEVICE_IN_FM_RX,                        AUDIO_SOURCE_FM_RX },
     { AUDIO_DEVICE_IN_FM_RX_A2DP,                   AUDIO_SOURCE_FM_RX_A2DP },
-#endif
     { AUDIO_DEVICE_IN_ALL,                          AUDIO_SOURCE_DEFAULT }
 };
 
