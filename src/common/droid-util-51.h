@@ -334,6 +334,7 @@ struct string_conversion string_conversion_table_input_channels[] = {
     STRING_ENTRY(AUDIO_CHANNEL_IN_ALL),
     STRING_ENTRY(AUDIO_CHANNEL_IN_FRONT_BACK),
     STRING_ENTRY(AUDIO_CHANNEL_IN_ALL),
+    STRING_ENTRY(AUDIO_CHANNEL_IN_VOICE_CALL_MONO),
     { 0, NULL }
 };
 
