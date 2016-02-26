@@ -100,8 +100,6 @@ uint32_t conversion_table_default_audio_source[][2] = {
     { AUDIO_DEVICE_IN_VOICE_CALL,                   AUDIO_SOURCE_VOICE_CALL },
     { AUDIO_DEVICE_IN_BACK_MIC,                     AUDIO_SOURCE_MIC },
     { AUDIO_DEVICE_IN_REMOTE_SUBMIX,                AUDIO_SOURCE_REMOTE_SUBMIX },
-    { AUDIO_DEVICE_IN_FM_RX,                        AUDIO_SOURCE_FM_RX },
-    { AUDIO_DEVICE_IN_FM_RX_A2DP,                   AUDIO_SOURCE_FM_RX_A2DP },
     { AUDIO_DEVICE_IN_ALL,                          AUDIO_SOURCE_DEFAULT }
 };
 
@@ -142,10 +140,6 @@ struct string_conversion string_conversion_table_output_device[] = {
     STRING_ENTRY(AUDIO_DEVICE_OUT_FM),
     STRING_ENTRY(AUDIO_DEVICE_OUT_AUX_LINE),
     STRING_ENTRY(AUDIO_DEVICE_OUT_SPEAKER_SAFE),
-#ifdef QCOM_HARDWARE
-    STRING_ENTRY(AUDIO_DEVICE_OUT_FM_TX),
-    STRING_ENTRY(AUDIO_DEVICE_OUT_PROXY),
-#endif
     /* Combination entries consisting of multiple devices defined above.
      * These don't require counterpart in string_conversion_table_output_device_fancy. */
     STRING_ENTRY(AUDIO_DEVICE_OUT_DEFAULT),
